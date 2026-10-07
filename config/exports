@@ -1,0 +1,5 @@
+# /etc/exports —— NFS 共享目录
+# 设备：升腾 C30 / OpenWrt(Kwrt)
+# 建议共享下一级子目录（如 /mnt/sda1/media），直接共享挂载点根可能在客户端显示为空
+
+/mnt/sda1/media 192.168.31.0/24(rw,sync,no_root_squash,insecure,no_subtree_check)
